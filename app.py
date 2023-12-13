@@ -2,7 +2,7 @@ import streamlit as st
 from transformers import AutoModelForSequenceClassification, AutoTokenizer
 import torch
 
-model_path = "/Users/charlesnanakwakye/BigData/StreamlitToxic/comment_finetuned"
+model_path = "comment_finetuned"
 model = AutoModelForSequenceClassification.from_pretrained(model_path)
 tokenizer = AutoTokenizer.from_pretrained(model_path)
 
